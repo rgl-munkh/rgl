@@ -68,8 +68,8 @@ export default function ProjectsPage() {
         <header className="mb-12">
           <h1 className="text-3xl font-bold mb-4">Projects</h1>
           <p className="text-zinc-300 text-lg">
-            A collection of projects I've built, ranging from web applications
-            to developer tools.
+            A collection of projects I&lsquo;ve built, ranging from web
+            applications to developer tools.
           </p>
         </header>
 

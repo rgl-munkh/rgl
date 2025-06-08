@@ -150,9 +150,9 @@ export default function WorkshopPage() {
             Interested in a Custom Workshop?
           </h2>
           <p className="text-zinc-300 mb-4">
-            I can create custom workshops tailored to your team's specific needs
-            and skill level. Whether it's a specific technology, framework, or
-            development practice, let's discuss how I can help.
+            I can create custom workshops tailored to your team&lsquo;s specific needs
+            and skill level. Whether it&lsquo;s a specific technology, framework, or
+            development practice, let&lsquo;s discuss how I can help.
           </p>
           <button className="bg-white text-black px-6 py-2 rounded-lg hover:bg-zinc-200 transition-colors font-medium">
             Get in Touch
