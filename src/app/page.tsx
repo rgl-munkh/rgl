@@ -7,8 +7,8 @@ export default function HomePage() {
       <div className="max-w-2xl mx-auto px-6 py-16">
         {/* Header */}
         <header className="mb-16">
-          <h1 className="text-2xl font-medium mb-2">Your Name</h1>
-          <p className="text-zinc-400">Full Stack Developer</p>
+          <h1 className="text-2xl font-medium mb-2">Bat-Orgil Munkhzorig</h1>
+          <p className="text-zinc-400">Software engineer</p>
         </header>
 
         {/* Navigation */}

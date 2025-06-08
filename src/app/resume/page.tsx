@@ -18,8 +18,8 @@ export default function ResumePage() {
         <header className="mb-12">
           <div className="flex justify-between items-start mb-6">
             <div>
-              <h1 className="text-3xl font-bold mb-2">Your Name</h1>
-              <p className="text-xl text-zinc-300">Full Stack Developer</p>
+              <h1 className="text-3xl font-bold mb-2">Batorgil Munkhzorig</h1>
+              <p className="text-xl text-zinc-300">Software engineer</p>
             </div>
             <button className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-lg hover:bg-zinc-200 transition-colors">
               <Download className="w-4 h-4" />
@@ -30,15 +30,15 @@ export default function ResumePage() {
           <div className="flex flex-wrap gap-6 text-zinc-400">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              your.email@example.com
+              orgil0588@gmail.com
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              +1 (555) 123-4567
+              +976 9600-5310
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              San Francisco, CA
+              Ulaanbaatar, MN
             </div>
           </div>
         </header>
