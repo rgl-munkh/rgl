@@ -3,12 +3,12 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <div className="max-w-2xl mx-auto px-6 py-16">
         {/* Header */}
         <header className="mb-16">
           <h1 className="text-2xl font-medium mb-2">Bat-Orgil Munkhzorig</h1>
-          <p className="text-zinc-400">Software engineer</p>
+          <p className="text-muted-foreground">Software engineer</p>
         </header>
 
         {/* Navigation */}
@@ -17,7 +17,7 @@ export default function HomePage() {
             <li>
               <Link
                 href="/resume"
-                className="flex items-center gap-2 text-zinc-300 hover:text-white transition-colors"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
                 Resume
                 <ArrowUpRight className="w-4 h-4" />
@@ -26,7 +26,7 @@ export default function HomePage() {
             <li>
               <Link
                 href="/projects"
-                className="flex items-center gap-2 text-zinc-300 hover:text-white transition-colors"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
                 Projects
                 <ArrowUpRight className="w-4 h-4" />
@@ -35,7 +35,7 @@ export default function HomePage() {
             <li>
               <Link
                 href="/workshop"
-                className="flex items-center gap-2 text-zinc-300 hover:text-white transition-colors"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
                 Coding Workshop
                 <ArrowUpRight className="w-4 h-4" />
@@ -47,7 +47,7 @@ export default function HomePage() {
         {/* Today Section */}
         <section className="mb-16">
           <h2 className="text-lg font-medium mb-6">Today</h2>
-          <div className="space-y-4 text-zinc-300 leading-relaxed">
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
               I work as a full stack developer, building modern web applications
               with React, Next.js, and Node.js. I enjoy creating intuitive user
@@ -67,12 +67,12 @@ export default function HomePage() {
           <div className="space-y-8">
             <div>
               <h3 className="font-medium mb-2">E-Commerce Platform</h3>
-              <p className="text-zinc-400 mb-3">
+              <p className="text-muted-foreground mb-3">
                 A modern e-commerce solution built with Next.js and Stripe.
               </p>
               <Link
                 href="/projects#ecommerce"
-                className="inline-flex items-center gap-1 text-sm text-zinc-300 hover:text-white transition-colors"
+                className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 View project
                 <ArrowUpRight className="w-3 h-3" />
@@ -81,12 +81,12 @@ export default function HomePage() {
 
             <div>
               <h3 className="font-medium mb-2">Task Management App</h3>
-              <p className="text-zinc-400 mb-3">
+              <p className="text-muted-foreground mb-3">
                 A collaborative task management tool with real-time updates.
               </p>
               <Link
                 href="/projects#taskapp"
-                className="inline-flex items-center gap-1 text-sm text-zinc-300 hover:text-white transition-colors"
+                className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 View project
                 <ArrowUpRight className="w-3 h-3" />
@@ -95,12 +95,12 @@ export default function HomePage() {
 
             <div>
               <h3 className="font-medium mb-2">Developer Portfolio</h3>
-              <p className="text-zinc-400 mb-3">
+              <p className="text-muted-foreground mb-3">
                 A minimalist portfolio template for developers.
               </p>
               <Link
                 href="/projects#portfolio"
-                className="inline-flex items-center gap-1 text-sm text-zinc-300 hover:text-white transition-colors"
+                className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 View project
                 <ArrowUpRight className="w-3 h-3" />

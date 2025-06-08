@@ -51,12 +51,12 @@ export default function WorkshopPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <div className="max-w-4xl mx-auto px-6 py-16">
         {/* Back Navigation */}
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to home
@@ -65,13 +65,13 @@ export default function WorkshopPage() {
         {/* Header */}
         <header className="mb-12">
           <h1 className="text-3xl font-bold mb-4">Coding Workshop</h1>
-          <p className="text-zinc-300 text-lg mb-6">
+          <p className="text-muted-foreground text-lg mb-6">
             Interactive coding workshops designed to help developers level up
             their skills through hands-on learning and practical projects.
           </p>
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+          <div className="bg-card border rounded-lg p-6">
             <h2 className="text-lg font-semibold mb-3">Workshop Format</h2>
-            <ul className="text-zinc-300 space-y-2">
+            <ul className="text-muted-foreground space-y-2">
               <li>• Small group sessions for personalized attention</li>
               <li>• Hands-on coding exercises and real-world projects</li>
               <li>• Code reviews and best practices discussion</li>
@@ -85,7 +85,7 @@ export default function WorkshopPage() {
           {workshops.map((workshop, index) => (
             <div
               key={index}
-              className="bg-zinc-900 border border-zinc-800 rounded-lg p-6"
+              className="bg-card border rounded-lg p-6"
             >
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-semibold">{workshop.title}</h3>
@@ -102,19 +102,19 @@ export default function WorkshopPage() {
                 </span>
               </div>
 
-              <p className="text-zinc-300 mb-6">{workshop.description}</p>
+              <p className="text-muted-foreground mb-6">{workshop.description}</p>
 
               {/* Workshop Details */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                <div className="flex items-center gap-2 text-zinc-400">
+                <div className="flex items-center gap-2 text-muted-foreground">
                   <Clock className="w-4 h-4" />
                   <span>{workshop.duration}</span>
                 </div>
-                <div className="flex items-center gap-2 text-zinc-400">
+                <div className="flex items-center gap-2 text-muted-foreground">
                   <Users className="w-4 h-4" />
                   <span>{workshop.participants} participants</span>
                 </div>
-                <div className="flex items-center gap-2 text-zinc-400">
+                <div className="flex items-center gap-2 text-muted-foreground">
                   <Calendar className="w-4 h-4" />
                   <span>Weekend sessions</span>
                 </div>
@@ -127,7 +127,7 @@ export default function WorkshopPage() {
                   {workshop.topics.map((topic, topicIndex) => (
                     <li
                       key={topicIndex}
-                      className="flex items-center gap-2 text-zinc-300"
+                      className="flex items-center gap-2 text-muted-foreground"
                     >
                       <CheckCircle className="w-4 h-4 text-green-400" />
                       {topic}
@@ -137,7 +137,7 @@ export default function WorkshopPage() {
               </div>
 
               {/* CTA */}
-              <button className="bg-white text-black px-6 py-2 rounded-lg hover:bg-zinc-200 transition-colors font-medium">
+              <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium">
                 Register Interest
               </button>
             </div>
@@ -145,16 +145,16 @@ export default function WorkshopPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="mt-16 bg-zinc-900 border border-zinc-800 rounded-lg p-6">
+        <section className="mt-16 bg-card border rounded-lg p-6">
           <h2 className="text-xl font-semibold mb-4">
             Interested in a Custom Workshop?
           </h2>
-          <p className="text-zinc-300 mb-4">
+          <p className="text-muted-foreground mb-4">
             I can create custom workshops tailored to your team&lsquo;s specific needs
             and skill level. Whether it&lsquo;s a specific technology, framework, or
             development practice, let&lsquo;s discuss how I can help.
           </p>
-          <button className="bg-white text-black px-6 py-2 rounded-lg hover:bg-zinc-200 transition-colors font-medium">
+          <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium">
             Get in Touch
           </button>
         </section>
