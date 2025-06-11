@@ -1,3 +1,5 @@
+"use client";
+
 import { CodePreview } from "@/components/code-preview";
 
 const component = {
@@ -55,18 +57,20 @@ export const CopyButton = () => {
       </button>
     </div>
   );
-};`
+};`,
 };
 
 export default function ComponentsPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
+    <div className="flex items-center justify-center min-h-screen bg-background">
       <div className="w-full max-w-2xl p-8">
         <div className="space-y-8">
           <div className="flex justify-center">
             <button
               onClick={() => {
-                navigator.clipboard.writeText("Copied !!!").catch(console.error);
+                navigator.clipboard
+                  .writeText("Copied !!!")
+                  .catch(console.error);
               }}
               className="border border-gray-300 rounded-md p-2 cursor-pointer [&_svg]:stroke-gray-800 hover:bg-gray-50 hover:[&_svg]:stroke-black border:border-gray-400"
             >
@@ -92,4 +96,4 @@ export default function ComponentsPage() {
       </div>
     </div>
   );
-} 
+}
