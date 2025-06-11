@@ -52,23 +52,23 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div className="container py-8">
+    <div className="container py-8 mx-auto">
       {/* Header */}
       <header className="mb-12">
-        <h1 className="text-3xl font-bold mb-4">Projects</h1>
-        <p className="text-muted-foreground text-lg">
-          A collection of projects I&apos;ve built, ranging from web applications
-          to developer tools.
+        <h1 className="mb-4 text-3xl font-bold">Projects</h1>
+        <p className="text-lg text-muted-foreground">
+          A collection of projects I&apos;ve built, ranging from web
+          applications to developer tools.
         </p>
       </header>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {projects.map((project) => (
           <div
             key={project.id}
             id={project.id}
-            className="bg-card rounded-lg overflow-hidden border"
+            className="overflow-hidden border rounded-lg bg-card"
           >
             {/* Project Image */}
             <div className="relative h-48 bg-muted">
@@ -82,8 +82,8 @@ export default function ProjectsPage() {
 
             {/* Project Content */}
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <h3 className="mb-3 text-xl font-semibold">{project.title}</h3>
+              <p className="mb-4 leading-relaxed text-muted-foreground">
                 {project.description}
               </p>
 
@@ -92,7 +92,7 @@ export default function ProjectsPage() {
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 py-1 bg-muted text-muted-foreground text-sm rounded"
+                    className="px-2 py-1 text-sm rounded bg-muted text-muted-foreground"
                   >
                     {tech}
                   </span>
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                  className="inline-flex items-center gap-2 transition-colors text-muted-foreground hover:text-foreground"
                 >
                   <ExternalLink className="w-4 h-4" />
                   Live Demo
@@ -114,7 +114,7 @@ export default function ProjectsPage() {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                  className="inline-flex items-center gap-2 transition-colors text-muted-foreground hover:text-foreground"
                 >
                   <Github className="w-4 h-4" />
                   Source Code
