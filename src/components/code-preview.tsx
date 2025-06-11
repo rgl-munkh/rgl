@@ -43,10 +43,10 @@ export function CodePreview({ code }: CodePreviewProps) {
 
   return (
     <div className="relative">
-      <div className="absolute right-2 top-2 flex gap-2">
+      <div className="absolute flex gap-2 right-2 top-2">
         <button
           onClick={onCopy}
-          className="border border-border rounded-md p-2 cursor-pointer hover:bg-accent transition-colors"
+          className="p-2 transition-colors border rounded-md cursor-pointer border-border hover:bg-accent"
         >
           <AnimatePresence mode="wait" initial={false}>
             {copied ? (
@@ -61,8 +61,8 @@ export function CodePreview({ code }: CodePreviewProps) {
           </AnimatePresence>
         </button>
       </div>
-      <pre className="p-4 rounded-lg bg-muted overflow-x-auto">
-        <code className="text-sm font-mono">
+      <pre className="p-4 overflow-x-auto rounded-lg bg-muted">
+        <code className="font-mono text-sm">
           {previewLines.join("\n")}
           {hasMoreLines && !isExpanded && (
             <div className="mt-2 text-muted-foreground">...</div>
@@ -72,7 +72,7 @@ export function CodePreview({ code }: CodePreviewProps) {
       {hasMoreLines && (
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full mt-2 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center justify-center gap-2"
+          className="flex items-center justify-center w-full gap-2 py-2 mt-2 text-sm transition-colors text-muted-foreground hover:text-foreground"
         >
           {isExpanded ? (
             <>
@@ -87,4 +87,4 @@ export function CodePreview({ code }: CodePreviewProps) {
       )}
     </div>
   );
-} 
+}
